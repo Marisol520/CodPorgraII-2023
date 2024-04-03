@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Numero 1"
+        android:inputType="numberDecimal"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNumber1"
+        android:layout_marginTop="16dp"
+        android:hint="Numero 2"
+        android:inputType="numberDecimal"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNumber2"
+        android:layout_marginTop="16dp"
+        android:text="Resultado"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewResult"
+        android:layout_marginTop="16dp"
+        android:text="Suma"/>
+
+    <Button
+        android:id="@+id/btnSubtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSum"
+        android:layout_marginTop="16dp"
+        android:text="Restar"/>
+
+    <Button
+        android:id="@+id/btnMultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSubtract"
+        android:layout_marginTop="16dp"
+        android:text="Multiplicación"/>
+
+    <Button
+        android:id="@+id/btnDivide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnMultiply"
+        android:layout_marginTop="16dp"
+        android:text="Dividir"/>
+
+    <Button
+        android:id="@+id/btnFactorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDivide"
+        android:layout_marginTop="16dp"
+        android:text="Factorial"/>
+
+    <Button
+        android:id="@+id/btnExponential"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnFactorial"
+        android:layout_marginTop="16dp"
+        android:text="Exponential"/>
+
+    <Button
+        android:id="@+id/btnPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnExponential"
+        android:layout_marginTop="16dp"
+        android:text="Porcentaje"/>
+
+    <Button
+        android:id="@+id/btnSqrt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPercentage"
+        android:layout_marginTop="16dp"
+        android:text="Raiz Cuadrada"/>
+
+    <Button
+        android:id="@+id/btnCbrt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSqrt"
+        android:layout_marginTop="16dp"
+        android:text="Raiz Cubica"/>
+
+</RelativeLayout>
