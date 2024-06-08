@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:theme="@style/Dramas"
+    android:background="@color/colorBackground">
+
+    <!-- Logo o imagen de la aplicación -->
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/kdrama"/>
+
+    <!-- Campos de entrada para el usuario y contraseña -->
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/image_logo"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/barra"
+        android:hint=" Correo"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/edit_username"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/barra"
+        android:hint=" Contraseña"
+        android:inputType="textPassword" />
+
+    <!-- Botón para iniciar sesión -->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_password"
+        android:layout_marginTop="32dp"
+        android:text="Iniciar Sesión"
+        android:textColor="@color/white"/>
+
+    <!-- Enlace para registro o recuperación de contraseña -->
+    <TextView
+        android:id="@+id/text_register_or_forgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_marginTop="16dp"
+        android:text="¿No tienes cuenta? Regístrate aquí"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:gravity="center"/>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:theme="@style/Dramas"
+    android:background="@color/white">
+
+    <EditText
+        android:id="@+id/edtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Título del video"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/barra"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/edtNumeroCapitulo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Número del capítulo"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/barra"
+        android:textColor="@color/black"
+        android:layout_below="@id/edtTitulo"/>
+
+    <Button
+        android:id="@+id/btnSeleccionarVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar Video"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/edtNumeroCapitulo"/>
+
+    <VideoView
+        android:id="@+id/videoPreview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/btnSeleccionarVideo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar Video"
+        android:layout_below="@id/videoPreview"/>
+
+</RelativeLayout>

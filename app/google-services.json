@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "345314005081",
+    "firebase_url": "https://series-56756-default-rtdb.firebaseio.com",
+    "project_id": "series-56756",
+    "storage_bucket": "series-56756.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345314005081:android:b27d6186c60cf02e63a148",
+        "android_client_info": {
+          "package_name": "com.example.dramaland"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS_jOyUXwOYFj46reBMy60FIN5rGSdnbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345314005081:android:5042c223bbe2f6c663a148",
+        "android_client_info": {
+          "package_name": "com.example.dramasv2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS_jOyUXwOYFj46reBMy60FIN5rGSdnbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

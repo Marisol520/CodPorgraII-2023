@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Dramas">
+
+    <VideoView
+        android:id="@+id/videoView_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:onClick="toggleOverlay"/>
+
+    <RelativeLayout
+        android:id="@+id/overlayLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:padding="16dp"
+        android:background="#4F000000">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/back"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_toEndOf="@id/btnBack"
+            android:layout_marginStart="8dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tvChapterNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_below="@id/tvTitle"
+            android:layout_toEndOf="@id/btnBack"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"/>
+
+    </RelativeLayout>
+</FrameLayout>
+
+

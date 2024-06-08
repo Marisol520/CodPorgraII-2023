@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Definición de los colores -->
+    <color name="colorPrimary">#5E16FD</color>
+    <color name="colorPrimaryDark">#3D5A80</color>
+    <color name="colorAccent">#F945F6</color>
+    <color name="colorBackground">#F0F0F0</color>
+
+    <!-- Estilo de la aplicación -->
+    <style name="Dramas" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Color de la barra de navegación -->
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <!-- Color de la barra de estado -->
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <!-- Color primario de la aplicación -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- Color oscuro primario para barras de herramientas -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- Color de acento para botones y controles -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Color de fondo predeterminado de la aplicación -->
+        <item name="android:windowBackground">@color/colorBackground</item>
+
+        <item name="fontFamily">sans-serif-condensed-medium</item>
+    </style>
+
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Dramas"
+    android:background="@color/white">
+
+    <!-- Header con botón de volver, foto de perfil y nombre del usuario -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#AD85F4"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/back"
+            />
+
+        <ImageView
+            android:id="@+id/I_Group"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/perfil_ico"
+            android:contentDescription="profile_image" />
+
+        <TextView
+            android:id="@+id/N_Grupo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:text="Soporte y Sugerencias"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/message_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:padding="8dp" />
+
+        <RelativeLayout
+            android:id="@+id/message_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            android:padding="8dp">
+
+            <EditText
+                android:id="@+id/message_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/send_button"
+                android:background="@drawable/barra"
+                android:hint="Escriba su Mensaje..."
+                android:padding="8dp"
+                android:maxLines="3"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/send_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/send" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

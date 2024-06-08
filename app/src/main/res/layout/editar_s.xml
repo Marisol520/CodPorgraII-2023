@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Agrega_S"
+    android:background="@color/white"
+    android:theme="@style/Dramas">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Editar Serie"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:textStyle="italic"/>
+
+    <EditText
+        android:id="@+id/edtName_Editar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Name"
+        android:background="@drawable/barra"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/edtSynopsis_Editar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Synopsis"
+        android:background="@drawable/barra"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/edtCategories_Editar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Categories"
+        android:background="@drawable/barra"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/edtEpisodes_Editar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Episodes"
+        android:background="@drawable/barra"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"/>
+
+    <ImageView
+        android:id="@+id/imageView_Editar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="Image"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/btn_Editar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/selectfoto_Editar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizar Foto"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
